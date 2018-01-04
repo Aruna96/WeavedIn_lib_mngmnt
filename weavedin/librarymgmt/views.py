@@ -42,7 +42,7 @@ def addBook(request):
 		return redirect('/books')#save
 		
 	data = Author.objects.values()
-	return render(request, 'addbookn.html', {'details' : data})
+	return render(request, 'addbookn.html', {'author_details' : data})
 	
 
 def listBooks(request):

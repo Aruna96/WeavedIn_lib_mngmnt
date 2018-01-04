@@ -13,7 +13,7 @@
 			<p class="lib">Library.</p>
 			
 				<li><a href="/books" class="active" style="margin-right: 174px;margin-top: 15px;">Books</a>
-				<li><a href="/author" style="margin-right: 64px;margin-top: 15px;" >Authors</a>
+				<li><a href="/authors" style="margin-right: 64px;margin-top: 15px;" >Authors</a>
 		</div>
 		
 				<li class="fa" >Books</li>
@@ -25,7 +25,7 @@
 			{% for book in books %}
 			<div class="flex-container">
 				<div class="img" style="height:80px;"><img style="float: left; margin-right: 20px; margin-top: 10px;" src="{% static 'book_icon.png' %}" width="40" height="35" /></div>
-				<p class="name"><strong>{{ book.book_name }}</strong><br>by<strong>{{ book.author }}</strong></p>
+				<p class="name"><strong>{{ book.book_name }}</strong><br>by<strong> {{ book.author }} </strong></p>
 				<div class="born" style="float: right;"><p>ISBN-{{ book.isbn }}</p></div>
 	
 				<div class="info"><p>&nbsp;&nbsp;{{ book.desc }}</p> </div>

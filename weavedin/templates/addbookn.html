@@ -18,7 +18,7 @@
      	<input type="text" name="bname" placeholder="Book Name" required><br>
      	<select name="author" class="fa" required>
     	{% for i in author_details %}
-				<option value="author">{{ i.name }}</option>
+				<option value="author">{{ i.author_name }}</option>
 			{% endfor %}
    		</select>
      	<input type="number" name="num" placeholder="ISBN Number" style="width: 239px;" required>
