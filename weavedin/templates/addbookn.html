@@ -13,13 +13,13 @@
           <span class="glyphicon glyphicon-remove" style="font-size: 16px; margin-left: 447.7px; margin-top: 16.3px; color: #9395a0 ;"></span>
      </a>
      <p style="margin-left: 30px;">ADD BOOK</p>
-     <form class="form" action="/books/add" method="POST">
+     <form class="form" action="/books/add/" method="POST">
      	{% csrf_token %}
      	<input type="text" name="bname" placeholder="Book Name" required><br>
      	<select name="author" class="fa" required>
-    		{% for i in details %}
-			<option value="author">{{ i.author_name }}</option>
-			{%endfor %}
+    	{% for i in author_details %}
+				<option value="author">{{ i.name }}</option>
+			{% endfor %}
    		</select>
      	<input type="number" name="num" placeholder="ISBN Number" style="width: 239px;" required>
 		<textarea name="abt" placeholder="Description of content" class="text" required></textarea><br>
