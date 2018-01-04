@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AUTHORS</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'authors.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:500,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="main">
+		<div class="sub">
+			<p class="lib">Library.</p>
+			
+				<li><a href="/books" style="margin-right: 174px;margin-top: 15px;">Books</a>
+				<li><a href="/authors" style="margin-right: 64px;margin-top: 15px;" >Authors</a>
+		</div>
+		
+				<li class="fa" style="margin-bottom: 20px;" >Authors</li>
+				<li class="fan" style="margin-bottom: 20px;">{{ authors|length }} authors</li>
+
+		<div class="tab">
+			<div class="but">
+				<button class="btn " style="background-color: #6379f6;"><a href="/authors/adds">Add Authors</a></button>
+			</div>
+			{% for author in authors %}
+			<div class="flex-container">
+				<div ><img style="float: left; margin-right: 20px; margin-top: 10px;" src="{% static 'author_icon.png' %}" width="40" height="35"></div>
+				<p class="name"><strong>{{ author.author_name }}</strong></p>
+				<div class="born" style="float: right;"><p>{{ author.born }}</p></div>
+				<div class="age"><p style="margin-top: -25px; margin-left: 60px;"> {{ author.age }} / {{ author.gender }}</p></div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</body>
+</html>
+
+<!-- <style type="text/css">
+	.tab
+	{
+
+	}
+</style> -->

@@ -1,0 +1,196 @@
+.lib{
+	width: 78px;
+  height: 28px;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #6379f6;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+body{
+	font-family: "Roboto";
+  font-weight: 500;
+  font-style: normal;
+  color: #777982;
+  letter-spacing: 0.28px;
+  
+}
+.main{
+	height: 1024px;
+	width: 100%;
+	margin:0px;
+	background-color: #f8f8fa;
+}
+.sub{
+	height: 70px;
+	width: 100%;
+	margin:0px;
+	background-color: #ffffff;
+}
+
+li {
+    float: right;
+    color: black;
+    margin-top: -45px;
+    list-style-type: none;
+    padding: 0px;
+    font-size: 14px;
+    font-family: "Roboto";
+  font-weight: 500;
+  font-style: normal;
+  line-height: 28px;
+  letter-spacing: 0.28px;
+  height: 16px;
+}
+
+li a {
+    display: block;
+    color: #9395a0;
+    text-align: center;
+    padding: 0px;
+    text-decoration: none;
+}
+
+li a:active{
+	color:#6379f6;
+}
+
+.su{
+	margin-top: 20px;
+	/*text-align: center;*/
+	display: inline-block;
+	width:701px;
+	height:14px;
+}
+
+.fa{
+	margin-left: 43px;
+	float:left;
+	margin-top: 30px;
+}
+.fan{
+	margin-right: 281px;
+	/*float: right;*/
+	margin-top: 30px;
+}
+.flex-container{
+	width:970px;
+	height: 80px;
+	display: flex;
+	margin-left: 42px;
+	/*margin-top: 82px;*/
+	flex-direction: row;
+	background-color: #ffffff;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-content: space-between;
+}
+
+.flex-container>div {
+  background-color: #ffffff;
+  margin: 10px 10px 10px 20px;
+  margin-right: 0px;
+  /*text-align: left;*/
+  line-height: 18px;
+  font-size: 15px;
+}
+.born{
+	float:right;
+	font-size: 13px;
+	align-content: right;
+	text-align: right;
+	height:18px;
+	width:280px;
+	box-sizing: border-box;
+	f/*ont-family: "Roboto";
+  font-weight: 500;
+  font-style: normal;*/
+}
+.name {
+	margin-top: 10px;
+	font-size: 14px;
+	width:500px;
+	height:18px;
+	box-sizing: border-box;
+	font-family: "Roboto";
+  font-weight: 500;
+  font-style: normal;
+
+}
+.age {
+
+	float:left;
+	box-sizing: border-box;
+	width:100px;
+	font-size: 13px;
+    /*font-family: "Roboto";*/
+  font-weight: 500;
+  font-style: normal;
+	
+
+}
+.tab{
+	display: inline-block;
+	width: 100%;
+}
+
+.btn {
+	float: right;
+	width:150px;
+	height:40px;
+	background-color: #6379f6;
+	color: #ffffff;
+	margin-top: 40px;
+	margin-right: 40px;
+	margin-left: 40px;
+	font-size: 14px;
+    font-family: "Roboto";
+  font-weight: 500;
+  font-style: normal;
+}
+
+/*.btn {
+	float: right;
+	width:100px;
+	height:50px;
+	background-color:  #ffffff;
+	color: black;
+	margin-top: 10px;
+	/*margin-right: 40px;*/
+	/*font-size: 14px;
+    font-family: "Roboto";
+  font-weight: 500;
+  font-style: normal;
+  border:1px solid #e5e6ed;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.active, .active:hover, .active:focus, .active:visited{
+      color: #bdc0c3;
+      text-decoration: none;
+    }
+ .but {
+   width:250px;
+    font-size: 24px;
+    background-color: #f8f8fa;
+    color:black;
+    float: right;
+
+}*/
+
+
+
+/* Change background color of buttons on hover */
+/*.but button:hover {
+    background-color: #ddd;
+}*/
+
+/* Create an active/current tablink class */
+/*.but button.active {
+    background-color: #ccc;
+}*/*/

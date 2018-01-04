@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ADD AUTHOR</title>
+	<link rel="stylesheet" type="text/css" href="addauthor.css">
+	<link rel="stylesheet" type="text/css" href="addauthor.js">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:500,700" rel="stylesheet">
+</head>
+<body>
+<div class="fwrap">
+	 <a href="#" >
+          <span class="glyphicon glyphicon-remove" style="font-size: 16px; margin-left: 447.7px; margin-top: 16.3px; color: #9395a0 ;"></span>
+     </a>
+     <p style="margin-left: 30px;">ADD AUTHOR</p>
+     <form class="form">
+     	<div class="fgroup">
+	      	<label class="flabel" for="name">Author Name</label>
+	     	<input type="text" name="name" required>
+	    </div>
+	    <div class="fgroup" style="width: 175px;margin-right: 0px;">
+	      	<label class="flabel" for="age">Age</label>
+     		<input type="text" name="age" style="width: 175px;" required>
+     	</div>
+     	<select name="gender" class="fa" required>
+    		<option value="gender">Gender</option>
+    		<option value="fem">Female</option>
+			<option value="male">Male</option>
+			<option value="oth">Others</option>
+		</select>
+		<div class="fgroup">
+	      	<label class="flabel" for="born">Born In</label>
+			<input type="text" name="born" required><br>
+		</div>
+		
+		<textarea name="abt" class="text" placeholder="About Author" required></textarea><br>
+		
+		<input type="button" name="cancel" value="Cancel">
+		<input type="submit" name="submit" value="Save Author">
+	</form>
+</div>
+
+	</body>
+</html>

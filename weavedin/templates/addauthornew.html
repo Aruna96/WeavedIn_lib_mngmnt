@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ADD AUTHOR</title>
+	<link rel="stylesheet" type="text/css" href="addauthor.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:500,700" rel="stylesheet">
+</head>
+<body>
+<div class="form-wrapper">
+	 <a href="/authors" >
+          <span class="glyphicon glyphicon-remove" style="font-size: 16px; margin-left: 447.7px; margin-top: 16.3px; color: #9395a0 ;"></span>
+     </a>
+     <p style="margin-left: 30px;">ADD AUTHOR</p>
+     <form class="form" action="/authors/adds" method="POST">
+     	{% csrf_token %}
+     	<input type="text" name="name" placeholder="Author Name" required><br>
+     	<input type="number" name="age" placeholder="Age" min="1" max="100" style="width: 175px;" required>
+     	<select name="gender" class="fa" required>
+    		<option value="gender">Gender</option>
+    		<option value="fem">Female</option>
+			<option value="male">Male</option>
+			<option value="oth">Others</option>
+		</select>
+		<input type="text" name="born" placeholder="Born In" required><br>
+		<textarea name="abot" placeholder="About Author" class="text" required></textarea><br>
+		<input type="button" name="cancel" value="Cancel" onclick="window.location.href='/authors'">
+		<input type="submit" name="submit" value="Save Author">
+	</form>
+</div>
+
+</body>
+</html>
